@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreMore - Туризм</title>
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== Полноэкранное меню ===== -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <button class="close-menu" id="closeMenu">&times;</button>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="#slider">Слайдер</a></li>
+                <li><a href="#accordion">Аккордеон</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#order">Заказать тур</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ===== Хедер ===== -->
+    <header>
+        <img src="https://images.unsplash.com/photo-2zDw14yCYqk?auto=format&fit=crop&w=1920&q=80" alt="Горы" class="hero-image">
+        <div class="header-content">
+            <h1>ExploreMore</h1>
+            <p>Современный минимализм в путешествиях</p>
+            <button class="menu-button" id="openMenu">Меню</button>
+        </div>
+    </header>
+
+    <!-- ===== Секция слайдера ===== -->
+    <section class="slider-section" id="slider">
+        <h2>Наши туры</h2>
+        <div class="slider">
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Тур 1">
+                <div class="slide-text">
+                    <h3>Горы</h3>
+                    <p>Вдохновляющие походы и чистый воздух</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Тур 2">
+                <div class="slide-text">
+                    <h3>Пляжи</h3>
+                    <p>Солнце, море и расслабление</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Тур 3">
+                <div class="slide-text">
+                    <h3>Леса</h3>
+                    <p>Природа и умиротворение</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Аккордеон ===== -->
+    <section class="accordion-section" id="accordion">
+        <h2>Почему выбирают нас</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Опытные гиды</h3>
+                    <span class="triangle">&#9654;</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Наши гиды имеют многолетний опыт и знают все секретные маршруты.</p>
+                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=600&q=80" alt="Гид">
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Комфортное проживание</h3>
+                    <span class="triangle">&#9654;</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Мы подбираем лучшие отели и апартаменты для комфортного отдыха.</p>
+                    <img src="https://images.unsplash.com/photo-1560185127-6f51d78b9d82?auto=format&fit=crop&w=600&q=80" alt="Проживание">
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Уникальные маршруты</h3>
+                    <span class="triangle">&#9654;</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Каждое путешествие уникально и адаптировано под ваши интересы.</p>
+                    <img src="https://images.unsplash.com/photo-1519821172141-b5b4c28a237f?auto=format&fit=crop&w=600&q=80" alt="Маршруты">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Слайдшоу отзывов ===== -->
+    <section class="reviews-section" id="reviews">
+        <h2>Отзывы наших клиентов</h2>
+        <div class="review-container">
+            <div class="reviews">
+                <div class="review active">
+                    <p>"Лучшее путешествие в моей жизни!"</p>
+                    <h4>Анна</h4>
+                </div>
+                <div class="review">
+                    <p>"Гиды супер! Всё организовано идеально."</p>
+                    <h4>Иван</h4>
+                </div>
+                <div class="review">
+                    <p>"Вернусь снова! Спасибо за эмоции."</p>
+                    <h4>Мария</h4>
+                </div>
+            </div>
+            <div class="review-avatars">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Анна" class="active" data-index="0">
+                <img src="https://images.unsplash.com/photo-1531891437562-7b18a4c3fdbf?auto=format&fit=crop&w=80&q=80" alt="Иван" data-index="1">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80" alt="Мария" data-index="2">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Форма заказа ===== -->
+    <section class="order-section" id="order">
+        <h2>Заказать тур</h2>
+        <form id="orderForm">
+            <input type="text" name="name" placeholder="Имя" required>
+            <input type="text" name="phone" placeholder="Телефон" required>
+            <input type="email" name="to" placeholder="Email" required>
+            <textarea name="comment" placeholder="Комментарий"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="formMessage"></div>
+    </section>
+
+    <!-- jQuery и Slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
